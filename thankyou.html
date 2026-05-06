@@ -4,31 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration Complete | MediCare Plus</title>
-    <link rel="stylesheet" href="style3.css">
+    <link rel="stylesheet" href="style4.css">
     <style>
         .thank-you-card {
             text-align: center;
             padding: 4rem 2rem;
+            margin-top: 150px; /* Offset for fixed header */
         }
         .success-icon {
-            font-size: 4rem;
-            color: var(--success);
+            font-size: 5rem;
+            color: #10b981;
             margin-bottom: 1.5rem;
         }
         .btn-home {
             display: inline-block;
             margin-top: 2rem;
-            background: var(--primary);
+            background: #4338ca;
             color: white;
-            padding: 0.8rem 2rem;
+            padding: 1rem 2.5rem;
             border-radius: 8px;
             text-decoration: none;
             font-weight: 700;
-            transition: all 0.2s ease;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(67, 56, 202, 0.3);
         }
         .btn-home:hover {
-            background: var(--primary-hover);
-            transform: translateY(-2px);
+            background: #3730a3;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(67, 56, 202, 0.4);
+        }
+        /* Ensure logo size is controlled */
+        #main-logo {
+            height: 60px;
+            width: auto;
+            object-fit: contain;
         }
     </style>
 </head>
@@ -44,16 +53,20 @@
                     </div>
                 </div>
             </div>
+            <div class="hw-badge">Success</div>
         </header>
 
         <main>
             <section class="form-card thank-you-card">
                 <div class="success-icon">✓</div>
-                <h2>Registration Submitted Successfully!</h2>
-                <p class="intro-text">Thank you for choosing MediCare Plus. We have received your registration details and our staff will be contacting you shortly to schedule your initial consultation.</p>
-                <p>A confirmation email has been sent to the address provided.</p>
+                <h2 style="font-size: 2.5rem; color: #1e1b4b; margin-bottom: 1rem;">Registration Submitted!</h2>
+                <p class="intro-text" style="font-size: 1.2rem; color: #475569; max-width: 600px; margin: 0 auto;">
+                    Thank you for choosing <strong>MediCare Plus</strong>. We have received your registration details securely. 
+                    Our medical staff will review your profile and contact you shortly to schedule your initial consultation.
+                </p>
+                <p style="margin-top: 1.5rem; color: #64748b;">A confirmation email has been sent to your inbox.</p>
                 
-                <a href="homework3.html" class="btn-home">Return to Home</a>
+                <a href="homework4.html" class="btn-home">Return to Homepage</a>
             </section>
         </main>
 
